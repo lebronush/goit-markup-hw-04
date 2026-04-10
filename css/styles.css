@@ -183,7 +183,7 @@ img{
 .studio:active,
 .portfolio:active,
 .contacts:active{
-
+    
 }
 
 /* --------------------main-------------------- */
@@ -255,6 +255,12 @@ img{
     flex-direction: column;
     gap: 48px;
     align-items: center;
+
+    background-image: url(/goit-markup-hw-04/images/people-office\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+
 }
 
 .container-features{
