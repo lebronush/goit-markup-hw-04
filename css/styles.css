@@ -413,19 +413,21 @@ img{
 /* --------------------footer-------------------- */
 .footer{
     display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    flex-direction: row;
     background-color: #2E2F42;
     padding: 100px 0;
-    gap: 120px;
+    /* gap: 120px; */
 }
 
 .container-footer{
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0;
-    /* margin-right: 0; */
+    margin: 0 ;
+    /* width: 264px; */
 }
-
 .web-bottom{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -433,7 +435,6 @@ img{
     color: #4D5AE5;    
     letter-spacing: 0.03em;
     line-height: 1.17;
-    /* margin: 101.5px 0 0 0; */
 }
 
 .studio-bottom{
@@ -457,8 +458,11 @@ img{
 }
 
 .footer-link{
-    margin-left: 0;
+    margin-left: 120px;
+    /* margin: 0 0 0 120px; */
+    /* margin-left: 0; */
     padding: 0;
+    
 }
 
 .logo-bottom{
@@ -472,6 +476,8 @@ img{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+
+    margin: 0 112px 16px 0;
 }
 
 /* .web-icon-footer{
