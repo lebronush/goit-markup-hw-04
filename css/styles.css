@@ -187,27 +187,18 @@ img{
 }
 
 /* --------------------main-------------------- */
-.heading{
-    font-family: "Roboto", sans-serif;
-    color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-}
-
-.paragraph{
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
 .hero-image{
     background-color: #2E2F42;
     text-align: center;
     padding: 188px 0 188px;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(/images/people-office\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 1440px;
+    margin: auto;
 }
 
 .button-logo:hover{
@@ -255,12 +246,6 @@ img{
     flex-direction: column;
     gap: 48px;
     align-items: center;
-
-    background-image: url(/goit-markup-hw-04/images/people-office\ 1.jpg);
-    background-position: center;
-    background-size: cover;
-    
-
 }
 
 .container-features{
@@ -270,6 +255,17 @@ img{
 
 .list{
     width: calc((100% - 72px) / 4);
+}
+
+.list-icon{
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+
+    background: #f4f4fd;
+}
+
+.icon{
+    margin: 24px 100px;
 }
 
 .visually-hidden{
@@ -325,6 +321,52 @@ img{
     flex: 0 0 calc((100% - 3 * 24px) / 4);
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.heading{
+    font-family: "Roboto", sans-serif;
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin: 8px 0;
+}
+
+.paragraph{
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.icon-team{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.web-icon{
+    background: #4D5AE5;
+    border-radius: 100%;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-link{
+    
+}
+
+.icon-team{
+    fill: #f4f4fd;
+
 }
 
 .container-portfolio{
@@ -370,13 +412,18 @@ img{
 
 /* --------------------footer-------------------- */
 .footer{
+    display: flex;
     background-color: #2E2F42;
     padding: 100px 0;
+    gap: 120px;
 }
 
 .container-footer{
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
+    /* margin-right: 0; */
 }
 
 .web-bottom{
@@ -409,7 +456,30 @@ img{
     max-width: 264px;
 }
 
+.footer-link{
+    margin-left: 0;
+    padding: 0;
+}
+
 .logo-bottom{
     text-decoration: none;
-    /* margin: 100px 0 0 0; */
 }
+
+.footer-text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+/* .web-icon-footer{
+    fill: #f4f4fd;
+
+    background: #4D5AE5;
+    border-radius: 100%;
+
+    width: 40px;
+    height: 40px;
+} */
