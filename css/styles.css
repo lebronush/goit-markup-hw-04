@@ -360,6 +360,10 @@ img{
     justify-content: center;
 }
 
+
+.web-icon:hover{
+    background: #404BBF;
+}
 .icon-link{
     
 }
@@ -404,7 +408,9 @@ img{
 }
 
 .content-img{
-    
+    background: #4D5AE5;
+
+    /* width: 360px; */
 }
 
 .content-text{
@@ -489,4 +495,10 @@ img{
 
 .icon-team.icon-footer{
     gap: 16px;
+}
+
+.web-icon.web-icon-footer:hover{
+    background: #31D0AA;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
