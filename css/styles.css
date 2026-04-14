@@ -403,6 +403,19 @@ img{
     text-decoration: none;
 }
 
+.content-img{
+    
+}
+
+.content-text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+}
+
 .portfolio-text{
     padding: 32px 16px;
     border-bottom: 1px solid #E7E9FC;
@@ -412,21 +425,19 @@ img{
 
 /* --------------------footer-------------------- */
 .footer{
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    flex-direction: row;
     background-color: #2E2F42;
     padding: 100px 0;
-    /* gap: 120px; */
+}
+
+.foter-block{
+    display: flex;
+    gap: 120px;
 }
 
 .container-footer{
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0 ;
-    /* width: 264px; */
 }
 .web-bottom{
     font-family: "Raleway", sans-serif;
@@ -458,11 +469,7 @@ img{
 }
 
 .footer-link{
-    margin-left: 120px;
-    /* margin: 0 0 0 120px; */
-    /* margin-left: 0; */
     padding: 0;
-    
 }
 
 .logo-bottom{
@@ -480,12 +487,6 @@ img{
     margin: 0 112px 16px 0;
 }
 
-/* .web-icon-footer{
-    fill: #f4f4fd;
-
-    background: #4D5AE5;
-    border-radius: 100%;
-
-    width: 40px;
-    height: 40px;
-} */
+.icon-team.icon-footer{
+    gap: 16px;
+}
