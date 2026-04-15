@@ -202,6 +202,9 @@ img{
 }
 
 .button-logo:hover{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
     background-color: #404bbf;
     cursor: pointer;
 }
@@ -362,6 +365,8 @@ img{
 
 
 .web-icon:hover{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     background: #404BBF;
 }
 .icon-link{
@@ -387,6 +392,23 @@ img{
     width: calc((100% - 48px) / 3);
 }
 
+.portfolio-one:hover .content-text{
+    background-color: #4D5AE5;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    height: 100%;
+    bottom: 0;
+
+    transform: translateY(100%);
+    transition: 250ms;
+
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+
 .our-portfolio{
     font-size: 36px;
     font-weight: 700;
@@ -405,12 +427,35 @@ img{
 .portfolio-six{
     display: block;
     text-decoration: none;
+
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
-.content-img{
-    background: #4D5AE5;
+.thumb {
+    background-color: #4D5AE5;
+    /* padding: 40px 32px 0; */
+    width: 100%;
+    display: block;
 
-    /* width: 360px; */
+    position: relative;
+
+    /* position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    transform: translateY(100%); */
+
+}
+
+.img-portfolio{
+    /* position: relative;
+    overflow: hidden; */
+
+    display: block;
+    width: 100%;
 }
 
 .content-text{
@@ -420,6 +465,14 @@ img{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+
+    /* margin: 40px 32px 0; */
+
+    position: absolute;
+    /* overflow: hidden; */
+    top: 0;
+    left: 0;
+    
 }
 
 .portfolio-text{
