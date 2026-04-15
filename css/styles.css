@@ -178,8 +178,6 @@ img{
 .contacts:hover,
 .contacts:focus,
 .studio.current{
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     color: #404bbf;
 }
 
@@ -201,20 +199,18 @@ img{
     text-align: center;
     padding: 188px 0 188px;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
 }
 
 .button-logo:hover{
     background-color: #404bbf;
     cursor: pointer;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-logo:focus{
@@ -223,12 +219,17 @@ img{
 }
 
 .button-logo{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
     background-color: #4D5AE5;
+    color: #FFFFFF;
+
     cursor: pointer;
     line-height: 1.5;
     font-size: 16px;
-    color: #FFFFFF;
     letter-spacing: 0.04em;
+
     border-radius: 4px;
     border: none;
     padding: 16px 32px;
@@ -360,7 +361,7 @@ img{
     gap: 24px;
 }
 
-.web-icon{
+/* .web-icon{
     background: #4D5AE5;
     border-radius: 100%;
 
@@ -370,16 +371,32 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-
-.web-icon:hover{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    background: #404BBF;
-}
+} */
+
 .icon-link{
-    
+    background: #4D5AE5;
+    border-radius: 100%;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .web-icon:hover{
+    background: #404BBF;
+} */
+
+.icon-link:hover,
+.icon-link:focus {
+    background: #404BBF;
 }
 
 .icon-team{
@@ -403,41 +420,35 @@ img{
     width: calc((100% - 48px) / 3);
 }
 
-.portfolio-one:hover .content-text{
-    padding: 40px 32px 0;
+.portfolio-link:hover .content-text{
     transform: translateY(0);
     transition: 250ms;
 }
 
-.portfolio-two:hover .content-text{
-    padding: 40px 32px 0;
+/* .portfolio-two:hover .content-text{
     transform: translateY(0);
     transition: 250ms;
 }
 
 .portfolio-three:hover .content-text{
-    padding: 40px 32px 0;
     transform: translateY(0);
     transition: 250ms;
 }
 
 .portfolio-four:hover .content-text{
-    padding: 40px 32px 0;
     transform: translateY(0);
     transition: 250ms;
 }
 
 .portfolio-five:hover .content-text{
-    padding: 40px 32px 0;
     transform: translateY(0);
     transition: 250ms;
 }
 
 .portfolio-six:hover .content-text{
-    padding: 40px 32px 0;
     transform: translateY(0);
     transition: 250ms;
-}
+}  */
 
 .list-portfolio:hover{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -455,12 +466,12 @@ img{
     margin-bottom: 72px;
 }
 
-.portfolio-one,
-.portfolio-two,
+.portfolio-link{
+/* .portfolio-two,
 .portfolio-three,
 .portfolio-four,
 .portfolio-five,
-.portfolio-six{
+.portfolio-six{ */
     display: block;
     text-decoration: none;
 
@@ -497,11 +508,13 @@ img{
 
     width: 100%;
     height: 100%;
+    padding: 40px 32px 0;
 
     background: #4D5AE5;
 
     transform: translateY(100%);
-    transition: 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
@@ -518,9 +531,10 @@ img{
     padding: 100px 0;
 }
 
-.foter-block{
+.footer-block{
     display: flex;
     gap: 120px;
+    align-items: baseline;
 }
 
 .container-footer{
@@ -580,8 +594,9 @@ img{
     gap: 16px;
 }
 
-.web-icon.web-icon-footer:hover{
-    background: #31D0AA;
+.footer-svg:hover,
+.footer-svg:focus {
+    background-color: #31D0AA;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
