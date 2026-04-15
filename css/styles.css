@@ -599,7 +599,7 @@ img{
 
 }
 
-.footer-svg:hover.icon-link,
-.footer-svg:focus.icon-link{
+.icon-link.footer-svg:hover,
+.icon-link.footer-svg:focus {
     background-color: #31D0AA;
 }
