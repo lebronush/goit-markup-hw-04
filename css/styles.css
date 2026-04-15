@@ -393,19 +393,51 @@ img{
 }
 
 .portfolio-one:hover .content-text{
-    background-color: #4D5AE5;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-
-    height: 100%;
-    bottom: 0;
-
-    transform: translateY(100%);
+    padding: 40px 32px 0;
+    transform: translateY(0);
     transition: 250ms;
 
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); 
+}
+
+.portfolio-two:hover .content-text{
+    padding: 40px 32px 0;
+    transform: translateY(0);
+    transition: 250ms;
+
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); 
+}
+
+.portfolio-three:hover .content-text{
+    padding: 40px 32px 0;
+    transform: translateY(0);
+    transition: 250ms;
+
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); 
+}
+
+.portfolio-four:hover .content-text{
+    padding: 40px 32px 0;
+    transform: translateY(0);
+    transition: 250ms;
+
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); 
+}
+
+.portfolio-five:hover .content-text{
+    padding: 40px 32px 0;
+    transform: translateY(0);
+    transition: 250ms;
+
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); 
+}
+
+.portfolio-six:hover .content-text{
+    padding: 40px 32px 0;
+    transform: translateY(0);
+    transition: 250ms;
+
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); 
 }
 
 
@@ -433,29 +465,14 @@ img{
     overflow: hidden;
 }
 
-.thumb {
-    background-color: #4D5AE5;
-    /* padding: 40px 32px 0; */
+.thumb .img-portfolio{
     width: 100%;
     display: block;
-
-    position: relative;
-
-    /* position: absolute;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-
-    transform: translateY(100%); */
-
 }
 
-.img-portfolio{
-    /* position: relative;
-    overflow: hidden; */
-
-    display: block;
-    width: 100%;
+.thumb{
+    position: relative;
+    overflow: hidden;
 }
 
 .content-text{
@@ -466,13 +483,20 @@ img{
     letter-spacing: 0.02em;
     color: #f4f4fd;
 
-    /* margin: 40px 32px 0; */
-
     position: absolute;
-    /* overflow: hidden; */
+    overflow: hidden;
     top: 0;
     left: 0;
     
+
+    width: 100%;
+    height: 100%;
+
+    background: #4D5AE5;
+
+    transform: translateY(100%);
+    transition: 250ms;
+
 }
 
 .portfolio-text{
